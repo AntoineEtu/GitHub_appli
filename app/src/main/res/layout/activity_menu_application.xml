@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:gravity="center_horizontal"
         android:background="#FFFFFF">
 
@@ -57,6 +57,18 @@
                     android:src="@drawable/gist" />
             </RelativeLayout>
         </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:textSize="35sp"
+            android:text="Mes repos"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/repo_list">
+        </ListView>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
